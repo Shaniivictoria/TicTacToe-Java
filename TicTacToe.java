@@ -14,8 +14,12 @@ import java.util.Scanner;
 
 
 
-public class TicTacToe{
+public class TicTacToe extends JPanel{
     public TicTacToe(){
+        Dimension size = new Dimension(420, 300);
+        setPreferredSize(size);
+        setMinimumSize(size);
+        setMaximumSize(size);
 
     }
     public static void main(String[]args){
