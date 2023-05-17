@@ -15,6 +15,16 @@ import java.util.Scanner;
 
 
 public class TicTacToe extends JPanel{
+
+    boolean playerX;
+    boolean gameDOne = false;
+    int winner = -1;
+    int player1wins = 0, player2wins = 0;
+    iont[][]board
+
+
+
+
     public TicTacToe(){
         Dimension size = new Dimension(420, 300);
         setPreferredSize(size);
@@ -23,6 +33,15 @@ public class TicTacToe extends JPanel{
 
     }
     public static void main(String[]args){
+        JFrame frame = new JFrame("Tic Tac Toe");
+        frame.getContentPane();
+
+        TicTacToe tpanel = new TicTacToe();
+        frame.add(tpanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.pack();
+        frame.setVisible(true);
 
     }
 }
